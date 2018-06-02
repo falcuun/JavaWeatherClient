@@ -11,17 +11,17 @@
     <stylesheets>
         <URL value="@Style.css" />
     </stylesheets>
-   <children>
-      <Button id="searchButton" fx:id="searchButton" layoutX="276.0" layoutY="39.0" mnemonicParsing="false" onAction="#search" text="Search" />
-      <TextField fx:id="searchCity" alignment="CENTER" layoutX="227.0" layoutY="14.0" promptText="City" onAction="#search" />
-      <TableView fx:id="tableView" layoutX="104.0" layoutY="100.0" prefHeight="200.0" prefWidth="423.0">
-        <columns>
-          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
-            <TableColumn fx:id="tempCol" prefWidth="75.0" text="Temp" />
-            <TableColumn fx:id="pressCol" prefWidth="75.0" text="Pressure" />
-            <TableColumn fx:id="descCol" prefWidth="120.0" text="Description" />
-        </columns>
-      </TableView>
-   </children>
+    <children>
+        <Button id="searchButton" fx:id="searchButton" layoutX="276.0" layoutY="39.0" mnemonicParsing="false" onAction="#search" text="Search" />
+        <TextField fx:id="searchCity" alignment="CENTER" layoutX="227.0" layoutY="14.0" onAction="#search" promptText="City" />
+        <TableView fx:id="tableView" layoutX="104.0" layoutY="100.0" prefHeight="200.0" prefWidth="423.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="tempCol" prefWidth="75.0" text="Temp" />
+                <TableColumn fx:id="pressCol" prefWidth="75.0" text="Pressure" />
+                <TableColumn fx:id="descCol" prefWidth="120.0" text="Description" />
+            </columns>
+        </TableView>
+    </children>
 </AnchorPane>
